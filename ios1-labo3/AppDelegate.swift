@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ios1-labo3
+//  labo3pokemon
 //
-//  Created by macos on 30/03/1402 AP.
+//  Created by Simon Turcotte (Étudiant) on 2023-06-20.
 //
 
 import UIKit
@@ -33,4 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
+
+
 

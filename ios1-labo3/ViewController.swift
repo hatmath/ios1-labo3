@@ -1,19 +1,47 @@
 //
 //  ViewController.swift
-//  ios1-labo3
+//  labo3pokemon
 //
-//  Creer par Mathieu Hatin le 20-juin-2023
+//  Created by Simon Turcotte (Étudiant) on 2023-06-20.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+let pokemons = ["pikachu", "ditto", "charizard", "poliwrath"]
 
+class ViewController: UIViewController {
+    var counter = 0;
+    
+    @IBOutlet weak var imageViewer: UIImageView!
+
+    @IBOutlet weak var textViewer: UILabel!
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.click))
+        tapGesture.numberOfTapsRequired = 1
+        imageViewer.addGestureRecognizer(tapGesture)
+        imageViewer.isUserInteractionEnabled = true
+        
     }
-
-
+    @objc func click() {
+        PokemonDownloader.shared.downloadPokemonData(for: pokemons.randomElement()!) { pokemon in
+            guard let pokemon = pokemon else {
+                print("Error: Invalid data")
+                return
+            }
+            ImageDownloader.shared.downloadImage(URL(string: pokemon.imageURL)!) { image in
+                DispatchQueue.main.async {
+                    self.imageViewer.image = image
+                    self.textViewer.text = "ID: \(pokemon.id) - Name: \(pokemon.name)"
+                }
+            }
+        }
+    }
 }
+
+
 
