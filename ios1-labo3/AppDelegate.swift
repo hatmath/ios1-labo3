@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  labo3pokemon
 //
-//  Created by Simon Turcotte (Étudiant) on 2023-06-20.
+//  Created by Simon Turcotte et Mathieu Hatin (Étudiants) on 2023-06-20.
 //
 
 import UIKit

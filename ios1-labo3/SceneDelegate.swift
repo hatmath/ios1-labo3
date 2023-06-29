@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ios1-labo3
 //
-//  Created by macos on 30/03/1402 AP.
+//  Created by Simon Turcotte et Mathieu Hatin (Étudiants) on 2023-06-20.
 //
 
 import UIKit
