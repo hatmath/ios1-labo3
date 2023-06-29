@@ -7,7 +7,8 @@
 
 import UIKit
 
-let pokemons = ["pikachu", "ditto", "charizard", "poliwrath"]
+//let pokemons = ["pikachu", "ditto", "charizard", "poliwrath"]
+let maxPokemons = 100
 
 class ViewController: UIViewController {
     var counter = 0;
@@ -28,11 +29,12 @@ class ViewController: UIViewController {
         
     }
     @objc func click() {
-        PokemonDownloader.shared.downloadPokemonData(for: pokemons.randomElement()!) { pokemon in
+        PokemonDownloader.shared.downloadPokemonData(for: Int.random(in: 1...maxPokemons)) { pokemon in
             guard let pokemon = pokemon else {
                 print("Error: Invalid data")
                 return
             }
+            //print(pokemon.imageURL)
             ImageDownloader.shared.downloadImage(URL(string: pokemon.imageURL)!) { image in
                 DispatchQueue.main.async {
                     self.imageViewer.image = image
