@@ -38,7 +38,12 @@ class ViewController: UIViewController {
             ImageDownloader.shared.downloadImage(URL(string: pokemon.imageURL)!) { image in
                 DispatchQueue.main.async {
                     self.imageViewer.image = image
-                    self.textViewer.text = "ID: \(pokemon.id) - Name: \(pokemon.name)"
+                    self.textViewer.text = """
+                        ID: \(pokemon.id)
+                        Nom: \(pokemon.name)
+                        Poids: \(pokemon.weight) dm
+                        Taille: \(pokemon.height) hg
+                        """
                 }
             }
         }
