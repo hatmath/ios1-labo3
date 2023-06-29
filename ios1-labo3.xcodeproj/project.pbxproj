@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22AE7FA62A4DC9880000A1F0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE7FA52A4DC9880000A1F0 /* ImageDownloader.swift */; };
-		22AE7FA92A4DC9A90000A1F0 /* PokemonDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE7FA82A4DC9A90000A1F0 /* PokemonDownloader.swift */; };
 		22AE7FAD2A4DCAD90000A1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22AE7FAB2A4DCAD90000A1F0 /* Main.storyboard */; };
+		22AE7FDE2A4E51D90000A1F0 /* PokemonDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE7FDD2A4E51D90000A1F0 /* PokemonDownloader.swift */; };
+		22AE7FE12A4E51F80000A1F0 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AE7FE02A4E51F80000A1F0 /* ImageDownloader.swift */; };
 		22C445E02A422AFC002A7675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C445DF2A422AFC002A7675 /* AppDelegate.swift */; };
 		22C445E22A422AFC002A7675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C445E12A422AFC002A7675 /* SceneDelegate.swift */; };
 		22C445E42A422AFC002A7675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C445E32A422AFC002A7675 /* ViewController.swift */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		22AE7FA52A4DC9880000A1F0 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = "../../ios1-labo3-gr/labo3pokemon/ImageDownloader.swift"; sourceTree = "<group>"; };
-		22AE7FA82A4DC9A90000A1F0 /* PokemonDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PokemonDownloader.swift; path = "../../ios1-labo3-gr/labo3pokemon/PokemonDownloader.swift"; sourceTree = "<group>"; };
 		22AE7FAC2A4DCAD90000A1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../ios1-labo3-gr/labo3pokemon/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		22AE7FDD2A4E51D90000A1F0 /* PokemonDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDownloader.swift; sourceTree = "<group>"; };
+		22AE7FE02A4E51F80000A1F0 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		22C445DC2A422AFB002A7675 /* ios1-labo3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios1-labo3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C445DF2A422AFC002A7675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22C445E12A422AFC002A7675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,12 +60,12 @@
 		22C445DE2A422AFB002A7675 /* ios1-labo3 */ = {
 			isa = PBXGroup;
 			children = (
-				22AE7FA82A4DC9A90000A1F0 /* PokemonDownloader.swift */,
-				22AE7FA52A4DC9880000A1F0 /* ImageDownloader.swift */,
+				22AE7FDD2A4E51D90000A1F0 /* PokemonDownloader.swift */,
+				22AE7FE02A4E51F80000A1F0 /* ImageDownloader.swift */,
 				22C445DF2A422AFC002A7675 /* AppDelegate.swift */,
 				22C445E12A422AFC002A7675 /* SceneDelegate.swift */,
-				22C445E32A422AFC002A7675 /* ViewController.swift */,
 				22AE7FAB2A4DCAD90000A1F0 /* Main.storyboard */,
+				22C445E32A422AFC002A7675 /* ViewController.swift */,
 				22C445E82A422AFD002A7675 /* Assets.xcassets */,
 				22C445EA2A422AFD002A7675 /* LaunchScreen.storyboard */,
 				22C445ED2A422AFD002A7675 /* Info.plist */,
@@ -143,10 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22AE7FA92A4DC9A90000A1F0 /* PokemonDownloader.swift in Sources */,
 				22C445E42A422AFC002A7675 /* ViewController.swift in Sources */,
+				22AE7FE12A4E51F80000A1F0 /* ImageDownloader.swift in Sources */,
 				22C445E02A422AFC002A7675 /* AppDelegate.swift in Sources */,
-				22AE7FA62A4DC9880000A1F0 /* ImageDownloader.swift in Sources */,
+				22AE7FDE2A4E51D90000A1F0 /* PokemonDownloader.swift in Sources */,
 				22C445E22A422AFC002A7675 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
